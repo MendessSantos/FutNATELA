@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fut na Tela</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="png">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Logo centralizada -->
+        <div class="logo">
+            <img src="images/futnatelahorizontal.png" alt="Fut na Tela">
+        </div>
+
+        <!-- Tela do canal -->
+        <div class="canal">
+            <!-- Imagem de fundo inicial -->
+        </div>
+
+        <!-- Barra de pesquisa -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Buscar Canal" onkeyup="filterChannels()">
+        </div>
+
+        <!-- Lista de canais com barra de rolagem -->
+        <div class="channels">
+            <div class="channel-item" onclick="changeChannel('https://embedmax.site/tvl/premiere1.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20premiere%20ao%20vivo.webp" alt="Prime Video">
+                <span>PREMIERE CLUBES</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://embedmax.site/tvl/premiere2.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20premiere%20ao%20vivo.webp" alt="Prime Video">
+                <span>PREMIERE 2</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20sportv%20ao%20vivo.webp" alt="Star+">
+                <span>SPORT TV</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20espn%20ao%20vivo.webp" alt="Star+">
+                <span>ESPN</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20espn%20ao%20vivo.webp" alt="Star+">
+                <span>ESPN 2</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://embedmax.site/tvl/paramountmais1.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20espn%20ao%20vivo.webp" alt="Star+">
+                <span>ESPN 2</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20band%20sports%20ao%20vivo.webp">
+                <span>BAND SPORTS</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://embedmax.site/tvl/globoSP.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20globo%20ao%20vivo.webp">
+                <span>GLOBO SP</span>
+            </div>
+            <div class="channel-item" onclick="changeChannel('https://embedmax.site/tvl/globoRJ.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20globo%20ao%20vivo.webp">
+                <span>GLOBO RJ</span>
+            </div>
+            <!-- Adicione mais canais conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="https://www.instagram.com/ebert_mendes/?igsh=cTFlbzh6ODV4bnVn&utm_source=qr" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram" style="height: 24px; vertical-align: middle;">
+          Ébert Mendes
+        </a>
+        <p>&copy; 2024 Fut na Tela - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

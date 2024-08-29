@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.canal {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: url('https://ardos.com.br/wp-content/uploads/2020/07/Depositphotos_12379367_xl-2015-scaled.jpg.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.canal video, .canal iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.search-bar {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.channels {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.channel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.channel-item:hover {
+    background-color: #ff0000;
+}
+
+.channel-item img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.channel-item span {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+    text-align: center;
+    border-top: 1px solid #ff0000;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
