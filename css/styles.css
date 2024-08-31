@@ -35,14 +35,14 @@ body {
 
 .canal {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio:16/9;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 00px;
     position: relative;
     background-image: url('https://ardos.com.br/wp-content/uploads/2020/07/Depositphotos_12379367_xl-2015-scaled.jpg.webp');
     background-size: cover;
