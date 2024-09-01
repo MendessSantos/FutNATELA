@@ -4,7 +4,7 @@ function changeChannel(url) {
     playerContainer.style.backgroundImage = 'none'; // Remove a imagem de fundo
 
     if (url.endsWith('.m3u8')) {
-        // Reprodução de vídeos M3U8 com Video.js
+        // Reprodução de vídeos M3U8 com Video.js e HLS.js
         const video = document.createElement('video');
         video.className = 'video-js vjs-default-skin';
         video.controls = true;
@@ -15,17 +15,32 @@ function changeChannel(url) {
         playerContainer.appendChild(video);
 
         const player = videojs(video);
-        player.src({
-            src: url,
-            type: 'application/x-mpegURL'
-        });
+
+        // Verifica se o navegador suporta M3U8 nativamente
+        if (Hls.isSupported()) {
+            const hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                video.play();
+            });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            // Para navegadores que suportam M3U8 nativamente
+            video.src = url;
+            video.addEventListener('loadedmetadata', function() {
+                video.play();
+            });
+        } else {
+            console.error('Este navegador não suporta M3U8.');
+        }
+
     } else if (url.endsWith('.php')) {
         // Exibição de links PHP usando um iframe
         const iframe = document.createElement('iframe');
         iframe.src = url;
         iframe.style.width = "100%";
         iframe.style.height = "100%";
-        iframe.style.border = 'none';  // Remove borda do iframe
+        iframe.style.border = 'none';
         iframe.onload = function() {
             console.log('Iframe carregado com sucesso.');
         };
