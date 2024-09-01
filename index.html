@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fut na Tela</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favicon.png" type="png">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <!-- Video.js CSS -->
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 </head>
@@ -17,87 +17,37 @@
         </div>
 
         <!-- Tela do canal -->
-        <div class="canal">
-            <!-- Imagem de fundo inicial -->
-        </div>
+        <div class="canal"></div>
 
         <!-- Barra de pesquisa -->
         <div class="search-bar">
             <input type="text" id="search" placeholder="Buscar Canal" onkeyup="filterChannels()">
         </div>
 
-     <!-- Lista de canais com barra de rolagem -->
-     <div class="channels">
-        <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-          <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-          <span class="channel-title">Corinthians X Flamengo</span>
-          <span class="channel-details">Brasileirão - 16:00 (Player 1)</span>
+        <!-- Lista de canais com barra de rolagem -->
+        <div class="channels">
+            <div class="channel-item" onclick="changeChannel('http://hzcdn.vood.top:80/hls/2374_.m3u8')">
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
+                <span class="channel-title">Corinthians X Flamengo</span>
+                <span class="channel-details">Brasileirão - 16:00 (Player 1)</span>
+            </div>
+
+            
         </div>
 
-        <div class="channel-item" onclick="changeChannel('https://live-as-08-03.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJCUiIsImRvbWFpbiI6ImxpdmUtYXMtMDgtMDMudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzI1Mjk2MzMyLCJpYXQiOjE3MjUyMDk5MzIsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiMGQzZTAyYjMtYzAwYi00NjEwLWJhZGQtZTIwYTI0NDViY2I3IiwicGF0aCI6Ii9udS9mKGJNYXg9MzMwMDAwMCxiTWluPTIwMDAsZHZyPTEyMCkvZ2xvYm8tc3AxL3BsYXlsaXN0Lm0zdTgifQ.JD2TkL8EcIeIppDxP6pqRikTKx3tCoWOPowiNLL8TsO-xFqr2uUwOuSHZ--3CpXz27-kHI7bfEQtJNLMEt_1QUHUG_aLNOsJ7cw7-29YAiBare0_RnisdmbHSF8FmP0nArpSE5OR_OVN_TqFiSA6iE4sWmfnqEOkzJLfQfqNkTfRCl4kzfNRdGOCFneTFL582MxeAqCB66L00bN_T3Wmj0pQd1-vykb_UGceaeTTCwo1AfaoYpSNqR4JwIuoflcmaFVKHcxjwZnl1qLM1ZtzqRI64CW1lW2PgiwNY8jhcSprl4zk3k5vtN0fmorYtDlNY0ZLTGIT5nKnaQgYuyabHQ/nu/f(bMax=3300000,bMin=2000,dvr=120)/globo-sp1/playlist.m3u8https://live-as-08-17.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJCUiIsImRvbWFpbiI6ImxpdmUtYXMtMDgtMTcudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzI1Mjk2NDE0LCJpYXQiOjE3MjUyMTAwMTQsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiMGQzZTAyYjMtYzAwYi00NjEwLWJhZGQtZTIwYTI0NDViY2I3IiwicGF0aCI6Ii9udS9mKGJNYXg9MzMwMDAwMCxiTWluPTIwMDApL3BmYzQvcGxheWxpc3QubTN1OCJ9.R6L8G8EMYIqf2fidfDTan5j0uJx5PE159oRbUvvTQnxgRtGaT3y5q5nGZcTvPYHiwdTbPj6bSUo1V9FoeODme68CWCU7qRnUMGPCan77INv13zL4-dnEuFz5yfkmG9rGR5wXwbAGlrimXzb59FrDif1Q1qN51c0ldNcGsoYENT2H8XQ4DRVLOnov0ufPdGU20bJtyE6IAQeA2-EbRveSnPdGGpxUq8-p_TUP35BATJ4ZLxtSVcWztk2ffHQvuqESOHFTHquZAPlw1Le2rdaDzV-y1uM4xIdwLV_aQFCytTkm3dVmMEvKvUOD97tJdSObLwlitV_GAaSarKkLBBxgXg/nu/f(bMax=3300000,bMin=2000)/pfc4/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Corinthians X Flamengo</span>
-            <span class="channel-details">Brasileirão - 16:00 (Player 2)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Atlético-PR X Palmeiras</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 1)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Atlético-PR X Palmeiras</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 2)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Fluminense X São Paulo</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 1)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Fluminense X São Paulo</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 2)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Vitória X Vasco</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 1)</span>
-          </div>
-
-          <div class="channel-item" onclick="changeChannel('https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8')">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5261074-live-stream-live-icon-live-streaming-icon-symbol-gratis-vetor.jpg" alt="Prime Video">
-            <span class="channel-title">Vitória X Vasco</span>
-            <span class="channel-details">Brasileirão - 18:30 (Player 2)</span>
-          </div>
-
-
-      </div>
-
-      
-      
         
-        
-        <!-- Adicione mais canais conforme necessário -->
-    </div>
-</div>
-    <footer>
-        <a href="https://www.instagram.com/futnatela_aovivo/?igsh=cnd0enU2eDIwemZy" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram" style="height: 24px; vertical-align: middle;">
-          Fut NA TELA
-        </a>
 
-        <a href="https://www.instagram.com/futnatela_aovivo/?igsh=cnd0enU2eDIwemZy" target="_blank">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/746/small/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="Instagram" style="height: 24px; vertical-align: middle;">
-          Suporte/ Dúvidas
-        </a>
-        <p>&copy; 2024 Fut na Tela - Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <a href="https://www.instagram.com/futnatela_aovivo/?igsh=cnd0enU2eDIwemZy" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram" style="height: 24px; vertical-align: middle;">
+                Fut NA TELA
+            </a>
+            <a href="https://www.instagram.com/futnatela_aovivo/?igsh=cnd0enU2eDIwemZy" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/746/small/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="WhatsApp" style="height: 24px; vertical-align: middle;">
+                Suporte/ Dúvidas
+            </a>
+            <p>&copy; 2024 Fut na Tela - Todos os direitos reservados.</p>
+        </footer>
 
     <!-- Video.js JavaScript -->
     <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
